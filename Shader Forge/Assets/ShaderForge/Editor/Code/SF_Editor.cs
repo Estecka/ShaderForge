@@ -630,7 +630,7 @@ namespace ShaderForge {
 
 
 		bool Clicked() {
-			return Event.current.type == EventType.mouseDown;
+			return Event.current.type == EventType.MouseDown;
 		}
 		
 		float fps = 0;
@@ -809,7 +809,7 @@ namespace ShaderForge {
 			//SF_AllDependencies.DrawDependencyTree(new Rect(0, 0, Screen.width, Screen.height));
 			//return;
 
-//			if(Event.current.keyCode == KeyCode.Space && Event.current.type == EventType.keyDown){
+//			if(Event.current.keyCode == KeyCode.Space && Event.current.type == EventType.KeyDown){
 //				Debug.Log("Beep");
 //				Event.current.Use();
 //
@@ -916,7 +916,7 @@ namespace ShaderForge {
 				}
 			}
 
-			if( Event.current.rawType == EventType.keyUp ){
+			if( Event.current.rawType == EventType.KeyUp ){
 				foreach(SF_EditorNodeData nd in nodeTemplates){
 					nd.holding = false;
 				}
@@ -980,7 +980,7 @@ namespace ShaderForge {
 			//GUI.DrawTexture(ssRectIcon, SF_GUI.Screenshot_icon);
 
 
-			if(Event.current.type == EventType.repaint)
+			if(Event.current.type == EventType.Repaint)
 				UpdateCoroutines();
 
 
@@ -1677,7 +1677,7 @@ namespace ShaderForge {
 				GUIStyle style = new GUIStyle( EditorStyles.boldLabel );
 				style.alignment = TextAnchor.UpperCenter;
 
-				//if( Event.current.type == EventType.mouseMove)
+				//if( Event.current.type == EventType.MouseMove)
 					//desc = "";
 
 				//GUILayout.BeginVertical();
