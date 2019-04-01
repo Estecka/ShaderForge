@@ -137,6 +137,7 @@ namespace ShaderForge {
 			BindingFlags bfs = BindingFlags.Static | BindingFlags.NonPublic;
 			Type[] args = new Type[]{ typeof(Camera) };
 			mSetCameraOnlyDrawMesh = typeof( Handles ).GetMethod( "SetCameraOnlyDrawMesh", bfs, null, args, null );
+			if (mSetCameraOnlyDrawMesh != null)
 			mSetCameraOnlyDrawMesh.Invoke( null, new object[]{ cam } );
 
 			// Create pivot/transform to hold it
