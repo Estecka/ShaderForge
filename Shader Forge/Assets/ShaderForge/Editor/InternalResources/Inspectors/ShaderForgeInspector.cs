@@ -133,7 +133,7 @@ namespace UnityEditor {
 
 
 		void InitStyles() {
-			Styles.errorIcon = (Texture2D)editorGuiUtilityLoadIcon.Invoke( null, new object[] { "console.erroricon.sml" } ); // EditorGUIUtility.LoadIcon( "console.erroricon.sml" );
+			Styles.errorIcon = (Texture2D)editorGuiUtilityLoadIcon?.Invoke( null, new object[] { "console.erroricon.sml" } ); // EditorGUIUtility.LoadIcon( "console.erroricon.sml" );
 			Styles.warningIcon = (Texture2D)editorGuiUtilityLoadIcon.Invoke( null, new object[] { "console.warnicon.sml" } ); // EditorGUIUtility.LoadIcon( "console.warnicon.sml" );
 			Styles.showSurface = (GUIContent)editorGuiUtilityTextContent.Invoke( null, new object[] { "Show generated code|Show generated code of a surface shader" } ); // EditorGUIUtility.TextContent( "Show generated code|Show generated code of a surface shader" );
 			Styles.showCurrent = (GUIContent)editorGuiUtilityTextContent.Invoke( null, new object[] { "Compile and show code | ▾" } ); // new GUIContent( "Compile and show code | ▾" );
